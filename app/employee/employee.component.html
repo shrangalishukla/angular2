@@ -1,0 +1,34 @@
+<table>
+	<thead>
+		<tr>
+			<th attr.colspan="{{coloumnSpan}}">
+			Employee Detail
+				
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>firstName</td>
+			<td>{{firstName}}</td>
+	    </tr>
+		<tr>
+			<td>lastName</td>
+			<td>{{lastName}}</td>
+		</tr>
+		<tr *ngIf="showDetail">
+			<td>address</td>
+			<td>{{address}}</td>
+		</tr>
+		<tr *ngIf="showDetail">
+			<td>age</td>
+			<td>{{age}}</td>
+		</tr>
+</table>
+<br />
+<button on-click="toogleDetail()">toogle Detail</button>
+<br />
+<input type="text" name="Name" [value]="name" (input)='name=$event.target.value' />
+<p>you enter{{name}}</p>
+
+

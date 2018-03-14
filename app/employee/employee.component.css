@@ -1,0 +1,19 @@
+table {
+	color : blue;
+	font-family: Arial;
+}
+
+td {
+	border: 1px solid black;
+}
+
+.btn_class {
+	color: red;
+}
+
+.btn_class1 {
+	font-family: Arial;
+}
+.btn_class2 {
+	font-weight: bold;
+}
